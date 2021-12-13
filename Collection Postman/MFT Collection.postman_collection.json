@@ -1,0 +1,779 @@
+{
+	"info": {
+		"_postman_id": "532da44a-36ab-4e11-9462-ee31a863551a",
+		"name": "MFT Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadempresa",
+			"item": [
+				{
+					"name": "Listar Empresas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadempresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadempresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma  Empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadempresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadempresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Empresas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste 2\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadempresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadempresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Empresa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"cdEmpresa\": 2,\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": \"rUA BLA\",\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadempresa/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadempresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Empresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadempresa/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadempresa",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadFamilia",
+			"item": [
+				{
+					"name": "Listar Familias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadfamilia",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadfamilia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma Familia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadfamilia/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadfamilia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Familia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmFamilia\": \"Teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadfamilia",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadfamilia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Familia",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"cdFamilia\": 118,\n            \"nmFamilia\": \"Teste 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadfamilia/118",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadfamilia",
+								"118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Familia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadfamilia/118",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadfamilia",
+								"118"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadGenero",
+			"item": [
+				{
+					"name": "Listar Generos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/genero",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"genero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um Genero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/genero/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"genero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Generos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmGenero\": \"Abarema de testes\",\n            \"cdFamilia\": {\n                \"cdFamilia\": 58,\n                \"nmFamilia\": \"Leguminosae-mimosoideae\"\n            }\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/genero",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"genero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Generos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"cdGenero\": 719,\n            \"nmGenero\": \"Abarema de testes alterada\",\n            \"cdFamilia\": {\n                \"cdFamilia\": 58,\n                \"nmFamilia\": \"Leguminosae-mimosoideae\"\n            }\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/genero/719",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"genero",
+								"719"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Generos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/genero/719",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"genero",
+								"719"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadGrupoEcologico",
+			"item": [
+				{
+					"name": "Listar GrupoEcologico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/grupoecologico",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"grupoecologico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um GrupoEcologico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/grupoecologico/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"grupoecologico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar GrupoEcologico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nmGrupoEcologico\": \"PIONEIRAS de TESTE\",\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/grupoecologico",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"grupoecologico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar GrupoEcologico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdGrupoEcologico\": 4,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmGrupoEcologico\": \"PIONEIRAS DE TESTE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/grupoecologico/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"grupoecologico",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar GrupoEcologico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/grupoecologico/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"grupoecologico",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadUsoEspecia",
+			"item": [
+				{
+					"name": "Listar Usoespecie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/usoespecie?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"usoespecie"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um Usoespecie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/usoespecie/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"usoespecie",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Usoespecie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nmUso\": \"MADEIRA PARA SERRARIA teste\",\n    \"lgMadeira\": \"Comercial\",\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/usoespecie",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"usoespecie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Usoespecie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdUso\": 28,\n    \"nmUso\": \"MADEIRA PARA SERRARIA Alterado\",\n    \"lgMadeira\": \"Comercial\",\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/usoespecie/28",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"usoespecie",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Usoespecie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/usoespecie/28",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"usoespecie",
+								"28"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadCategoriaProtecao",
+			"item": [
+				{
+					"name": "Listar CategoriaProtecao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/categoriaProtecao",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"categoriaProtecao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um CategoriaProtecao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/categoriaProtecao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"categoriaProtecao",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar CategoriaProtecao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nmCategoriaProtecao\": \"NÃO CATEGORIZADA teste\",\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/categoriaProtecao",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"categoriaProtecao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar CategoriaProecao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdCategoriaProtecao\": 6,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmCategoriaProtecao\": \"NÃO CATEGORIZADA atualizada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/categoriaProtecao/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"categoriaProtecao",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar CategoriaProtecao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/categoriaProtecao/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"categoriaProtecao",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
