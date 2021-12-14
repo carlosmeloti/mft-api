@@ -26,22 +26,5 @@ public interface GeraParcelESubParcelaRepository extends JpaRepository<GeraParce
 	public Integer qtdexisteSub(@Param("cdempresa") Long cdEmpresa, @Param("cdarea") Long cdArea, 
 			@Param("cdparcela") Integer cdparcela, @Param("cdsubparcela") Integer cdsubparcela);
 	
-		
-	@Transactional
-	@Modifying
-	@Query(value = "insert into d21_parcela ( d21_cdempresa,d21_cdarea,d21_cdparcela,"
-			+ " d21_cdtipoparcela, d21_lgtestemunha) values (:cdempresa, :cdarea, :cdparcela, "
-			+  ":cdtipoparcela, false)", nativeQuery = true)
-	public void inserirParcela(@Param("cdempresa") Long cdEmpresa, @Param("cdarea") Long cdArea,
-			@Param("cdparcela") Integer cdparcela,@Param("cdtipoparcela") Long cdtipoparcela);
-	
-	
-	@Transactional
-	@Modifying
-	@Query(value = "INSERT INTO d29_subparcela(d29_cdsubparcela, d29_cdempresa, d29_cdarea, d29_cdparcela) "
-			+ "VALUES (:cdsubparcela,:cdempresa, :cdarea, :cdparcela) ", nativeQuery = true)
-	public void inserirSubParcela(@Param("cdempresa") Long cdEmpresa, @Param("cdarea") Long cdArea,
-			@Param("cdparcela") Integer cdparcela, @Param("cdsubparcela") Integer cdsubparcela);
-
 	
 }

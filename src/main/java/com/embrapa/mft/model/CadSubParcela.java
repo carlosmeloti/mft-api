@@ -24,14 +24,15 @@ public class CadSubParcela {
 	@JoinColumn(name= "d29_cdempresa")
 	private CadEmpresa cdEmpresa;
 	
-	@ManyToOne
-	@JoinColumn(name= "d29_cdparcela")
-	private CadParcela cdParcela;
+	
+	@Column(name= "d29_cdparcela")
+	private Long cdParcela;
 		
 	@ManyToOne
 	@JoinColumn(name= "d29_cdarea")
 	private CadAmf cdArea;
-
+	
+	
 	public Long getCdSubParcela() {
 		return cdSubParcela;
 	}
@@ -48,11 +49,11 @@ public class CadSubParcela {
 		this.cdEmpresa = cdEmpresa;
 	}
 
-	public CadParcela getCdParcela() {
+	public Long getCdParcela() {
 		return cdParcela;
 	}
 
-	public void setCdParcela(CadParcela cdParcela) {
+	public void setCdParcela(Long cdParcela) {
 		this.cdParcela = cdParcela;
 	}
 
