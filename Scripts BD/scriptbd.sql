@@ -1343,7 +1343,7 @@ create table d30_classe_floresta(
 d30_cdclassefloresta bigserial not null primary key,
 d30_cdempresa bigserial,
 d30_nmclassefloresta varchar(50),
-d30_imfigura varchar(150)
+d30_imfigura bytea
 );
 
 ALTER TABLE d30_classe_floresta

@@ -26,7 +26,7 @@ public class ICClasseDeFloresta {
 	private String nmClassefloresta;
 	
 	@Column(name = "d30_imfigura")
-	private String enderecoImagem;
+	private byte[] enderecoImagem;
 
 	public Long getCdClassefloresta() {
 		return cdClassefloresta;
@@ -52,11 +52,11 @@ public class ICClasseDeFloresta {
 		this.nmClassefloresta = nmClassefloresta;
 	}
 
-	public String getEnderecoImagem() {
+	public byte[] getEnderecoImagem() {
 		return enderecoImagem;
 	}
 
-	public void setEnderecoImagem(String enderecoImagem) {
+	public void setEnderecoImagem(byte[] enderecoImagem) {
 		this.enderecoImagem = enderecoImagem;
 	}
 

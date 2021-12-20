@@ -17,7 +17,7 @@ public interface ICClasseDeFlorestaRepository  extends JpaRepository <ICClasseDe
 	@Modifying
 	@Query(value ="UPDATE d30_classe_floresta SET  d30_imfigura=:url WHERE d30_cdclassefloresta=:cdClassefloresta", 
 			   nativeQuery = true)
-	public void atualizarUrlImagem(@Param("cdClassefloresta") ICClasseDeFloresta cdClassefloresta,@Param("url") String url);
+	public void atualizarUrlImagem(@Param("cdClassefloresta") ICClasseDeFloresta cdClassefloresta,@Param("url") byte[] bs);
 	
    
 

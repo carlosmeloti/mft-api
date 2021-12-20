@@ -24,7 +24,7 @@ import com.embrapa.mft.model.CadEquacao;
 import com.embrapa.mft.repository.CadEquacaoRepository;
 
 @RestController
-@RequestMapping("/d08_equacao")
+@RequestMapping("/cadequacao")
 public class CadEquacaoResource {
 @Autowired
  private CadEquacaoRepository mftEquacaoRepository;
