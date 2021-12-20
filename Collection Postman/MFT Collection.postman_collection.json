@@ -1216,7 +1216,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/icclasefloresta/img/2",
+							"raw": "http://localhost:8082/icclasefloresta/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1224,7 +1224,6 @@
 							"port": "8082",
 							"path": [
 								"icclasefloresta",
-								"img",
 								"2"
 							],
 							"query": [
@@ -1244,13 +1243,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8082/icclasefloresta/2",
+							"raw": "localhost:8082/icclasefloresta/img/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
 								"icclasefloresta",
+								"img",
 								"2"
 							],
 							"query": [
