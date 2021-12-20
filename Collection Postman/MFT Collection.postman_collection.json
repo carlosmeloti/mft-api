@@ -774,6 +774,654 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "CadAMF",
+			"item": [
+				{
+					"name": "Listar AMF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadamf",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadamf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma AMF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadamf/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadamf",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar AMF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdListaEsp\": {\n        \"cdListaEsp\": 1,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmListaEsp\": \"LISTA REVISADA JULHO\"\n    },\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdEquacaoAreaBasalPadrao\": 0,\n    \"cdEquacaovolumeinvtemp\": 0,\n    \"nmArea\": \"Area de Teste criada 2\",\n    \"nmEstado\": \"Pa\",\n    \"nmMunicipio\": \"Belem\",\n    \"latitude1Grau\": 3,\n    \"latitude1Minuto\": 0,\n    \"latitude1Orientacao\": \"2\",\n    \"latitude2Grau\": null,\n    \"latitude2Minuto\": 2,\n    \"latitude2Orientacao\": null,\n    \"longitude1Grau\": 2,\n    \"longitude1Minuto\": 3,\n    \"longitude1Orientacao\": null,\n    \"longitude2Grau\": 0,\n    \"longitude2Minuto\": 3,\n    \"longitude2Orientacao\": null,\n    \"precipMediaAnualmm\": 2,\n    \"precipMediaMensalChuvamm\": null,\n    \"precipMediaMensalSecamm\": null,\n    \"mesesSeca\": null,\n    \"mesesChuva\": null,\n    \"tipoLogiaFlorestal\": \"wdwd\",\n    \"tipoSolo\": \"wdwd\",\n    \"relevo\": \"12\",\n    \"mnResponsavel\": null,\n    \"enderecoResponsavel\": null,\n    \"nrTelefoneResponsavel\": null,\n    \"emailResponsavel\": null,\n    \"txHistoricoArea\": null,\n    \"txObservacaoArea\": \"wdqwdqwd\",\n    \"lgMudaContada\": true,\n    \"lgPalmeiraContada\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadamf",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadamf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar CategoriaProecao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdarea\": 2,\n    \"cdListaEsp\": {\n        \"cdListaEsp\": 1,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmListaEsp\": \"LISTA REVISADA JULHO\"\n    },\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdEquacaoAreaBasalPadrao\": 0,\n    \"cdEquacaovolumeinvtemp\": 0,\n    \"nmArea\": \"Area de Teste alterada 2\",\n    \"nmEstado\": \"Pa\",\n    \"nmMunicipio\": \"Belem\",\n    \"latitude1Grau\": 3,\n    \"latitude1Minuto\": 0,\n    \"latitude1Orientacao\": \"2\",\n    \"latitude2Grau\": null,\n    \"latitude2Minuto\": 2,\n    \"latitude2Orientacao\": null,\n    \"longitude1Grau\": 2,\n    \"longitude1Minuto\": 3,\n    \"longitude1Orientacao\": null,\n    \"longitude2Grau\": 0,\n    \"longitude2Minuto\": 3,\n    \"longitude2Orientacao\": null,\n    \"precipMediaAnualmm\": 2,\n    \"precipMediaMensalChuvamm\": null,\n    \"precipMediaMensalSecamm\": null,\n    \"mesesSeca\": null,\n    \"mesesChuva\": null,\n    \"tipoLogiaFlorestal\": \"wdwd\",\n    \"tipoSolo\": \"wdwd\",\n    \"relevo\": \"12\",\n    \"mnResponsavel\": null,\n    \"enderecoResponsavel\": null,\n    \"nrTelefoneResponsavel\": null,\n    \"emailResponsavel\": null,\n    \"txHistoricoArea\": null,\n    \"txObservacaoArea\": \"wdqwdqwd\",\n    \"lgMudaContada\": true,\n    \"lgPalmeiraContada\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadamf/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadamf",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar CategoriaProtecao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadamf/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadamf",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicao",
+			"item": [
+				{
+					"name": "Listar Medicao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadmedicao?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadmedicao"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma Medicao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadmedicao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadmedicao",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Medicao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdArea\": {\n        \"cdarea\": 1,\n        \"cdListaEsp\": {\n            \"cdListaEsp\": 1,\n            \"cdEmpresa\": {\n                \"cdEmpresa\": 1,\n                \"nmEmpresa\": \"EMPRESA MODELO\",\n                \"nmAbreviado\": \"MODELO\",\n                \"nrTelefone\": null,\n                \"enderecoCompleto\": null,\n                \"txPessoacontato\": null,\n                \"cnpjEmpresa\": null,\n                \"diretorioArquivos\": null\n            },\n            \"nmListaEsp\": \"LISTA REVISADA JULHO\"\n        },\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"cdEquacaoAreaBasalPadrao\": 0,\n        \"cdEquacaovolumeinvtemp\": 0,\n        \"nmArea\": \"Area de Teste criada 2\",\n        \"nmEstado\": \"Pa\",\n        \"nmMunicipio\": \"Belem\",\n        \"latitude1Grau\": 3,\n        \"latitude1Minuto\": 0,\n        \"latitude1Orientacao\": \"2\",\n        \"latitude2Grau\": null,\n        \"latitude2Minuto\": 2,\n        \"latitude2Orientacao\": null,\n        \"longitude1Grau\": 2,\n        \"longitude1Minuto\": 3,\n        \"longitude1Orientacao\": null,\n        \"longitude2Grau\": 0,\n        \"longitude2Minuto\": 3,\n        \"longitude2Orientacao\": null,\n        \"precipMediaAnualmm\": 2,\n        \"precipMediaMensalChuvamm\": null,\n        \"precipMediaMensalSecamm\": null,\n        \"mesesSeca\": null,\n        \"mesesChuva\": null,\n        \"tipoLogiaFlorestal\": \"wdwd\",\n        \"tipoSolo\": \"wdwd\",\n        \"relevo\": \"12\",\n        \"mnResponsavel\": null,\n        \"enderecoResponsavel\": null,\n        \"nrTelefoneResponsavel\": null,\n        \"emailResponsavel\": null,\n        \"txHistoricoArea\": null,\n        \"txObservacaoArea\": \"wdqwdqwd\",\n        \"lgMudaContada\": true,\n        \"lgPalmeiraContada\": true\n    },\n    \"dtInicioMedica\": 1639537200000,\n    \"txObservacao\": \"teste cad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadmedicao",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadmedicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Medicao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdMedicao\": 2,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdArea\": {\n        \"cdarea\": 1,\n        \"cdListaEsp\": {\n            \"cdListaEsp\": 1,\n            \"cdEmpresa\": {\n                \"cdEmpresa\": 1,\n                \"nmEmpresa\": \"EMPRESA MODELO\",\n                \"nmAbreviado\": \"MODELO\",\n                \"nrTelefone\": null,\n                \"enderecoCompleto\": null,\n                \"txPessoacontato\": null,\n                \"cnpjEmpresa\": null,\n                \"diretorioArquivos\": null\n            },\n            \"nmListaEsp\": \"LISTA REVISADA JULHO\"\n        },\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"cdEquacaoAreaBasalPadrao\": 0,\n        \"cdEquacaovolumeinvtemp\": 0,\n        \"nmArea\": \"Area de Teste criada 2\",\n        \"nmEstado\": \"Pa\",\n        \"nmMunicipio\": \"Belem\",\n        \"latitude1Grau\": 3,\n        \"latitude1Minuto\": 0,\n        \"latitude1Orientacao\": \"2\",\n        \"latitude2Grau\": null,\n        \"latitude2Minuto\": 2,\n        \"latitude2Orientacao\": null,\n        \"longitude1Grau\": 2,\n        \"longitude1Minuto\": 3,\n        \"longitude1Orientacao\": null,\n        \"longitude2Grau\": 0,\n        \"longitude2Minuto\": 3,\n        \"longitude2Orientacao\": null,\n        \"precipMediaAnualmm\": 2,\n        \"precipMediaMensalChuvamm\": null,\n        \"precipMediaMensalSecamm\": null,\n        \"mesesSeca\": null,\n        \"mesesChuva\": null,\n        \"tipoLogiaFlorestal\": \"wdwd\",\n        \"tipoSolo\": \"wdwd\",\n        \"relevo\": \"12\",\n        \"mnResponsavel\": null,\n        \"enderecoResponsavel\": null,\n        \"nrTelefoneResponsavel\": null,\n        \"emailResponsavel\": null,\n        \"txHistoricoArea\": null,\n        \"txObservacaoArea\": \"wdqwdqwd\",\n        \"lgMudaContada\": true,\n        \"lgPalmeiraContada\": true\n    },\n    \"dtInicioMedica\": 1639537200000,\n    \"txObservacao\": \"teste cad atua\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadmedicao/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadmedicao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Medicao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadmedicao/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadmedicao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadTipoParcela",
+			"item": [
+				{
+					"name": "Listar Tipo Parcela",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtipoparcela?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtipoparcela"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um Tipo Parcela",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtipoparcela/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtipoparcela",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Tipo Parcela",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmTipoParcela\": \"PERMANENTE de testes\",\n    \"lgEstudoCrescimento\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtipoparcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtipoparcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Tipo Parcela",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdTipoParcela\": 4,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmTipoParcela\": \"PERMANENTE de testes ATUALIZADA\",\n    \"lgEstudoCrescimento\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtipoparcela/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtipoparcela",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Tipo Parcela",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtipoparcela/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtipoparcela",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadClasseFloresta",
+			"item": [
+				{
+					"name": "Listar Classe Floresta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/icclasefloresta?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma Classe Floresta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/icclasefloresta/img/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"img",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Imagem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/icclasefloresta/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Classe Floresta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmClassefloresta\": \"teste 2\",\n    \"enderecoImagem\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/icclasefloresta/img",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"img"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Imagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "anexo",
+									"type": "file",
+									"src": "/Users/carlosmelo/Downloads/imgcdClassefloresta1.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/icclasefloresta/anexarimagem?cdClassefloresta=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"anexarimagem"
+							],
+							"query": [
+								{
+									"key": "cdClassefloresta",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Tipo Parcela",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdClassefloresta\": 4,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmClassefloresta\": \"teste 2 atualizado\",\n    \"enderecoImagem\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/icclasefloresta/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Tipo Parcela",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/icclasefloresta/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"icclasefloresta",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gera Parcela e Subparcela",
+			"item": [
+				{
+					"name": "Cadastrar AMF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdEmpresa\":1,\n    \"cdArea\":1,\n    \"cdTipoParcela\":1,\n    \"cdParcelaInicio\":2,\n    \"nrParcelas\":\"2\",\n    \"nrSubParcelasPorParcelas\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/geraparcelaesubparcelas",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"geraparcelaesubparcelas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
