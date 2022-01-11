@@ -1376,3 +1376,21 @@ cdparcelainicio integer,
 nrparcelas integer,
 nrsubparcelas integer,
 cdtipoparcela bigserial);
+
+
+
+	CREATE TABLE d19_classe_identificacao_fuste(
+	d19_cdcif bigserial not null primary key,
+	d19_cdempresa bigserial,
+	d19_cdclassetamanho bigserial,
+	d19_nmcif varchar(100),
+	d19_lgviva boolean,
+	d19_lgdesaparecida boolean,
+	d19_lgegressa boolean,
+	d19_lgtemdescricaofuste boolean);
+	
+ ALTER TABLE d19_classe_identificacao_fuste
+ADD CONSTRAINT FK_d19_classe_identificacao_fuste_d13_cdempresa
+FOREIGN KEY (d19_cdempresa)
+REFERENCES d13_empresa(d13_cdempresa)
+ON DELETE CASCADE;

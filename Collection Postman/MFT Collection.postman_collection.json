@@ -1184,6 +1184,394 @@
 			]
 		},
 		{
+			"name": "CadClasseTamanhoIndividuo",
+			"item": [
+				{
+					"name": "Listar Classe Tamanho Individuo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/classtamanhoindividuo?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"classtamanhoindividuo"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma Classe de Tamanho de Individuo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/classtamanhoindividuo/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"classtamanhoindividuo",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Classe de Tamanho de Individuo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nmClasseTamanho\": \"ÁRVORE de Testes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/classtamanhoindividuo",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"classtamanhoindividuo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Classe de Tamanho de Individuo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdClasseTamanho\": 8,\n    \"nmClasseTamanho\": \"ÁRVORE de Testes Atualizado\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/classtamanhoindividuo/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"classtamanhoindividuo",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Classe de Tamanho de Individuo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/classtamanhoindividuo/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"classtamanhoindividuo",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CadSituaçao Silvicultural",
+			"item": [
+				{
+					"name": "Listar Cad Situacao Silvicultural",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtratamentosilvicultural?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtratamentosilvicultural"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma Cad Situacao Silvicultural",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtratamentosilvicultural/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtratamentosilvicultural",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Cad Situacao Silvicultural",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmTratamento\": \"ÁRVORE ANELADA de testes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtratamentosilvicultural",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtratamentosilvicultural"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Cad Situacao Silvicultural",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdTratamento\": 6,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmTratamento\": \"ÁRVORE ANELADA de testes atualizada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtratamentosilvicultural/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtratamentosilvicultural",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Cad Situacao Silvicultural",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtratamentosilvicultural/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtratamentosilvicultural",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mediçao Anterior",
+			"item": [
+				{
+					"name": "Listar Medicao Anterior",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtsatualtsanterior"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Medição Anterior a partir da atual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1&cdTratamentotual=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtsatualtsanterior"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								},
+								{
+									"key": "cdTratamentotual",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Medição anterior",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdTratamentoAnterior\": {\n        \"cdTratamento\": 3,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmTratamento\": \"ÁRVORE RESERVADA PARA FUTURA COLHEITA\"\n    },\n    \"cdTratamentotual\": {\n        \"cdTratamento\": 5,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmTratamento\": \"ÁRVORE RESERVADA PARA FUTURA COLHEITA\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtsatualtsanterior",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtsatualtsanterior"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Cad Situacao Silvicultural",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cadtsatualtsanterior/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cadtsatualtsanterior",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "CadClasseFloresta",
 			"item": [
 				{
@@ -1340,7 +1728,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cdClassefloresta\": 4,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmClassefloresta\": \"teste 2 atualizado\",\n    \"enderecoImagem\": null\n}",
+							"raw": "{\n    \"cdClassefloresta\": 2,\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmClassefloresta\": \"teste 2 teste\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1348,14 +1736,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8082/icclasefloresta/4",
+							"raw": "localhost:8082/icclasefloresta/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
 								"icclasefloresta",
-								"4"
+								"2"
 							]
 						}
 					},
