@@ -25,18 +25,21 @@ public class CadUsoEspecieRepositoryImpl  implements  CadUsoEspecieRepositoryQue
 
 	@PersistenceContext
 	private EntityManager manager;
+	
+	
 	@Override
 	public Page<CadUsoEspecie> filtrar(CadUsoEspecieFilter cadUsoEspecieFilter, Pageable pageable) {
 		CriteriaBuilder builder = manager.getCriteriaBuilder();
-		 CriteriaQuery<CadUsoEspecie> criteria = builder .createQuery(CadUsoEspecie.class);
-		  Root<CadUsoEspecie> root = criteria.from(CadUsoEspecie.class);
+		CriteriaQuery<CadUsoEspecie> criteria = builder .createQuery(CadUsoEspecie.class);
+		Root<CadUsoEspecie> root = criteria.from(CadUsoEspecie.class);
 		     
-		   Predicate[] predicates = criarRestricoes(cadUsoEspecieFilter, builder, root);
-		    criteria.where(predicates);
+		Predicate[] predicates = criarRestricoes(cadUsoEspecieFilter, builder, root);
+		criteria.where(predicates);
 		    
-		     TypedQuery<CadUsoEspecie> query = manager.createQuery(criteria);
-		      adiconarRestricoesDePaginacao(query, pageable);
-		        return new PageImpl<>(query.getResultList(), pageable, total(cadUsoEspecieFilter));
+		TypedQuery<CadUsoEspecie> query = manager.createQuery(criteria);
+		adiconarRestricoesDePaginacao(query, pageable);
+		 
+		return new PageImpl<>(query.getResultList(), pageable, total(cadUsoEspecieFilter));
 	}
 	
 	 private Long total(CadUsoEspecieFilter cadUsoEspecieFilter) {

@@ -34,12 +34,11 @@ public class CadFamiliaRepositoryImpl  implements CadFamiliaRepositoryQuery {
 		  
 		Predicate[] predicates = criarRestricoes(cadFamiliaFilter, builder, root);
 		criteria.where(predicates);
-		     TypedQuery<CadFamilia> query = manager.createQuery(criteria);
-		     adiconarRestricoesDePaginacao(query, pageable);    
+		
+		TypedQuery<CadFamilia> query = manager.createQuery(criteria);
+		adiconarRestricoesDePaginacao(query, pageable);    
 		     
 		return new PageImpl<>(query.getResultList(), pageable, total(cadFamiliaFilter));
-		
-		
 		
 	}
 

@@ -24,18 +24,21 @@ public class ICClasseDeFlorestaRepositoryImpl  implements  ICClasseDeFlorestaRep
 
 	@PersistenceContext
 	private EntityManager manager;
+	
+	
 	@Override
 	public Page<ICClasseDeFloresta> filtrar(ICClasseDeFlorestaFilter cadICClasseDeFlorestaFilter, Pageable pageable) {
 		CriteriaBuilder builder = manager.getCriteriaBuilder();
-		 CriteriaQuery<ICClasseDeFloresta> criteria = builder .createQuery(ICClasseDeFloresta.class);
-		  Root<ICClasseDeFloresta> root = criteria.from(ICClasseDeFloresta.class);
+		CriteriaQuery<ICClasseDeFloresta> criteria = builder .createQuery(ICClasseDeFloresta.class);
+		Root<ICClasseDeFloresta> root = criteria.from(ICClasseDeFloresta.class);
 		     
-		   Predicate[] predicates = criarRestricoes(cadICClasseDeFlorestaFilter, builder, root);
-		    criteria.where(predicates);
+		Predicate[] predicates = criarRestricoes(cadICClasseDeFlorestaFilter, builder, root);
+		criteria.where(predicates);
 		    
-		     TypedQuery<ICClasseDeFloresta> query = manager.createQuery(criteria);
-		      adiconarRestricoesDePaginacao(query, pageable);
-		        return new PageImpl<>(query.getResultList(), pageable, total(cadICClasseDeFlorestaFilter));
+		TypedQuery<ICClasseDeFloresta> query = manager.createQuery(criteria);
+		adiconarRestricoesDePaginacao(query, pageable);
+		        
+		return new PageImpl<>(query.getResultList(), pageable, total(cadICClasseDeFlorestaFilter));
 	}
 	
 	 private Long total(ICClasseDeFlorestaFilter iCClasseDeFlorestaFilter) {

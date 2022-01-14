@@ -61,7 +61,7 @@ public class CadClasseDeTamanhoRepositoryImpl implements CadClasseDeTamanhoRepos
 		    List<Predicate> predicates = new ArrayList<>();
 		    if (cadClasseDeTamanhoFilter.getCdArea() != null) {
 				predicates.add(
-						builder.equal(root.get(CadClasseDeTamanho_.cdEmpresa), cadClasseDeTamanhoFilter.getCdArea()));
+						builder.equal(root.get(CadClasseDeTamanho_.cdArea), cadClasseDeTamanhoFilter.getCdArea()));
             }if (cadClasseDeTamanhoFilter.getCdEmpresa() != null) {
 				predicates.add(
 						builder.equal(root.get(CadClasseDeTamanho_.cdEmpresa), cadClasseDeTamanhoFilter.getCdEmpresa()));

@@ -22,8 +22,8 @@ import com.embrapa.mft.repository.filter.CadGeneroFilter;
 
 public class CadGeneroRepositoryImpl implements CadGeneroRepositoryQuery {
 	
-@PersistenceContext
-private EntityManager manager;
+	@PersistenceContext
+	private EntityManager manager;
 	
 	@Override
 	public Page<CadGenero> filtrar(CadGeneroFilter generoFilter, Pageable pageable) {

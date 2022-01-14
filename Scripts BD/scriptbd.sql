@@ -1394,3 +1394,11 @@ ADD CONSTRAINT FK_d19_classe_identificacao_fuste_d13_cdempresa
 FOREIGN KEY (d19_cdempresa)
 REFERENCES d13_empresa(d13_cdempresa)
 ON DELETE CASCADE;
+
+
+CREATE TABLE r34_cif_atual_cif_anterior(
+	r34_cdcifanteriorpk bigserial not null primary key,
+	r34_cdempresa bigserial,
+	r34_cdclassetamanho bigserial,
+	r34_cdcifatual bigserial,
+	r34_cdcifanterior bigserial)
