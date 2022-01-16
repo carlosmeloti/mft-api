@@ -1325,6 +1325,39 @@
 			"name": "CadSituaçao Silvicultural",
 			"item": [
 				{
+					"name": "Mediçao Anterior",
+					"item": [
+						{
+							"name": "Buscar Medição Anterior a partir da atual",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1&cdTratamentotual=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cadtsatualtsanterior"
+									],
+									"query": [
+										{
+											"key": "cdEmpresa",
+											"value": "1"
+										},
+										{
+											"key": "cdTratamentotual",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "Listar Cad Situacao Silvicultural",
 					"request": {
 						"method": "GET",
@@ -1452,118 +1485,6 @@
 							"path": [
 								"cadtratamentosilvicultural",
 								"6"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Mediçao Anterior",
-			"item": [
-				{
-					"name": "Listar Medicao Anterior",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"cadtsatualtsanterior"
-							],
-							"query": [
-								{
-									"key": "cdEmpresa",
-									"value": "1"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar Medição Anterior a partir da atual",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1&cdTratamentotual=5",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"cadtsatualtsanterior"
-							],
-							"query": [
-								{
-									"key": "cdEmpresa",
-									"value": "1"
-								},
-								{
-									"key": "cdTratamentotual",
-									"value": "5"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Cadastrar Medição anterior",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"cdTratamentoAnterior\": {\n        \"cdTratamento\": 3,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmTratamento\": \"ÁRVORE RESERVADA PARA FUTURA COLHEITA\"\n    },\n    \"cdTratamentotual\": {\n        \"cdTratamento\": 5,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"EMPRESA MODELO\",\n            \"nmAbreviado\": \"MODELO\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n        },\n        \"nmTratamento\": \"ÁRVORE RESERVADA PARA FUTURA COLHEITA\"\n    }\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8082/cadtsatualtsanterior",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"cadtsatualtsanterior"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Deletar Cad Situacao Silvicultural",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8082/cadtsatualtsanterior/5",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"cadtsatualtsanterior",
-								"5"
 							]
 						}
 					},
@@ -1804,6 +1725,177 @@
 							"port": "8082",
 							"path": [
 								"geraparcelaesubparcelas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "InvContCIF",
+			"item": [
+				{
+					"name": "InvContCIF Mediçao Anterior",
+					"item": [
+						{
+							"name": "Buscar Medição Anterior a partir da atual",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/cadtsatualtsanterior?cdEmpresa=1&cdTratamentotual=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cadtsatualtsanterior"
+									],
+									"query": [
+										{
+											"key": "cdEmpresa",
+											"value": "1"
+										},
+										{
+											"key": "cdTratamentotual",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Listar InvCont Classe de Indentificação de Fuste",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cif?cdEmpresa=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cif"
+							],
+							"query": [
+								{
+									"key": "cdEmpresa",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma InvCont Classe de Indentificação de Fuste",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cif/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cif",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar InvCont Classe de Indentificação de Fuste",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdClasseTamanho\": {\n        \"cdClasseTamanho\": 1,\n        \"nmClasseTamanho\": \"ÁRVORE\"\n    },\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmCif\": \"Cif de testes 2\",\n    \"lgViva\": null,\n    \"lgDesaparecida\": null,\n    \"lgEgressa\": null,\n    \"lgTemDescricaoFuste\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cif",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cif"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Cad Situacao Silvicultural",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cdCif\": 2,\n    \"cdClasseTamanho\": {\n        \"cdClasseTamanho\": 1,\n        \"nmClasseTamanho\": \"ÁRVORE\"\n    },\n    \"cdEmpresa\": {\n        \"cdEmpresa\": 1,\n        \"nmEmpresa\": \"EMPRESA MODELO\",\n        \"nmAbreviado\": \"MODELO\",\n        \"nrTelefone\": null,\n        \"enderecoCompleto\": null,\n        \"txPessoacontato\": null,\n        \"cnpjEmpresa\": null,\n        \"diretorioArquivos\": null\n    },\n    \"nmCif\": \"Cif de testes 2 atualizado\",\n    \"lgViva\": null,\n    \"lgDesaparecida\": null,\n    \"lgEgressa\": null,\n    \"lgTemDescricaoFuste\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cif/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cif",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Cad Situacao Silvicultural",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"nmEmpresa\": \"EMPRESA Teste\",\n            \"nmAbreviado\": \"Teste\",\n            \"nrTelefone\": null,\n            \"enderecoCompleto\": null,\n            \"txPessoacontato\": null,\n            \"cnpjEmpresa\": null,\n            \"diretorioArquivos\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cif/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cif",
+								"2"
 							]
 						}
 					},

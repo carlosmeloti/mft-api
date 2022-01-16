@@ -21,8 +21,8 @@ public class InvContCIF {
 	private Long cdCif;
 	
 	@ManyToOne
-	@JoinColumn(name = "d19_cdclassetamanho")
-	private CadClasseDeTamanho cdClasseTamanho;
+	@JoinColumn(name = "d19_cdclassetamanho", referencedColumnName = "d10_cdclassetamanho")
+	private CadClassTamanhoIndividuo cdClasseTamanho;
 	
 	@ManyToOne
 	@JoinColumn(name = "d19_cdempresa")
@@ -51,11 +51,11 @@ public class InvContCIF {
 		this.cdCif = cdCif;
 	}
 
-	public CadClasseDeTamanho getCdClasseTamanho() {
+	public CadClassTamanhoIndividuo getCdClasseTamanho() {
 		return cdClasseTamanho;
 	}
 
-	public void setCdClasseTamanho(CadClasseDeTamanho cdClasseTamanho) {
+	public void setCdClasseTamanho(CadClassTamanhoIndividuo cdClasseTamanho) {
 		this.cdClasseTamanho = cdClasseTamanho;
 	}
 
