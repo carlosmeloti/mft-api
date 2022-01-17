@@ -1401,4 +1401,10 @@ CREATE TABLE r34_cif_atual_cif_anterior(
 	r34_cdempresa bigserial,
 	r34_cdclassetamanho bigserial,
 	r34_cdcifatual bigserial,
-	r34_cdcifanterior bigserial)
+	r34_cdcifanterior bigserial);
+	
+CREATE TABLE d11_dano(
+	d11_cdempresa BIGSERIAL,
+	d11_cddano BIGSERIAL,
+    d11_nmdano varchar(255),
+	d11_nmdanoabreviatura varchar(30));
