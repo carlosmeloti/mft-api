@@ -5,10 +5,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.embrapa.mft.model.CadEmpresa;
-import com.embrapa.mft.model.InvContIluminacao;
+import com.embrapa.mft.model.InvContFormaCopa;
 
-public interface InvContIluminacaoRepository extends JpaRepository<InvContIluminacao, Long> {
-	
-	public Page<InvContIluminacao> findByCdEmpresa(CadEmpresa cdEmpresa, Pageable pageable);
+public interface InvContFormaCopaRepository extends JpaRepository<InvContFormaCopa, Long>{
+
+	public Page<InvContFormaCopa> findByCdEmpresa(CadEmpresa cdEmpresa, Pageable pageable);
 
 }

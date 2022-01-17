@@ -1421,3 +1421,10 @@ CREATE TABLE d14_iluminacao(
 	d14_cdiluminacao BIGSERIAL,
 	d14_nmiluminacao varchar(255),
 	d14_nmiluminacaoabreviatura varchar(30));
+	
+CREATE TABLE d15_forma_copa(
+	d15_cdempresa BIGSERIAL,
+	d15_cdforma  BIGSERIAL,
+	d15_nmforma varchar(255),
+	d15_nmformaabreviatura varchar(30));
+		
