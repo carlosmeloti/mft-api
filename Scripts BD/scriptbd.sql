@@ -1414,3 +1414,10 @@ CREATE TABLE d12_podridao(
 	d12_cdpodridao BIGSERIAL,
 	d12_nmpodridao varchar(100),
 	d12_nmpodridaoabreviatura varchar(30));
+	
+
+CREATE TABLE d14_iluminacao(
+	d14_cdempresa BIGSERIAL,
+	d14_cdiluminacao BIGSERIAL,
+	d14_nmiluminacao varchar(255),
+	d14_nmiluminacaoabreviatura varchar(30));
