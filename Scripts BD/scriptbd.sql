@@ -1408,3 +1408,9 @@ CREATE TABLE d11_dano(
 	d11_cddano BIGSERIAL,
     d11_nmdano varchar(255),
 	d11_nmdanoabreviatura varchar(30));
+	
+CREATE TABLE d12_podridao(
+	d12_cdempresa BIGSERIAL,
+	d12_cdpodridao BIGSERIAL,
+	d12_nmpodridao varchar(100),
+	d12_nmpodridaoabreviatura varchar(30));
