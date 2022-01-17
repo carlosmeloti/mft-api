@@ -1427,4 +1427,9 @@ CREATE TABLE d15_forma_copa(
 	d15_cdforma  BIGSERIAL,
 	d15_nmforma varchar(255),
 	d15_nmformaabreviatura varchar(30));
-		
+
+CREATE TABLE d16_cipo(
+	d16_cdempresa BIGSERIAL,
+	d16_cdcipo BIGSERIAL,
+	d16_nmcipo varchar(255),
+	d16_nmcipoabreviatura varchar(30));
