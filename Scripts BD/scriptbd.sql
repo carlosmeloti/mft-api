@@ -1222,24 +1222,6 @@ d29_cdparcela	bigserial);
 		
 
 
-ALTER TABLE d29_subparcela
-ADD CONSTRAINT FK_d29_cdempresa
-FOREIGN KEY (d29_cdempresa)
-REFERENCES d13_empresa(d13_cdempresa)
-ON DELETE CASCADE;
-
-ALTER TABLE d29_subparcela
-ADD CONSTRAINT FK_d29_cdparcela
-FOREIGN KEY (id)
-REFERENCES d21_parcela(id)
-ON DELETE CASCADE;
-
-ALTER TABLE d29_subparcela
-ADD CONSTRAINT FK_d29_cdarea
-FOREIGN KEY (d29_cdarea)
-REFERENCES d20_area(d20_cdarea)
-ON DELETE CASCADE;
-
 
 CREATE TABLE p23_arvore(
    p23_cdarvore bigserial not null primary key,
